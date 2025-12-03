@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap');
+
+:root {
+  --vinho: #2b0000;
+  --ouro: #c9a227;
+  --pergaminho: #f6f0e6;
+  --marrom: #3b1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--vinho);
+  color: var(--pergaminho);
+  font-family: 'EB Garamond', serif;
+  line-height: 1.6;
+  padding: 2vw;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid var(--ouro);
+  padding-bottom: 1.5vw;
+  margin-bottom: 3vw;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 1vw;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2vw;
+  color: var(--ouro);
+  border: 1px solid var(--ouro);
+  padding: 0.5vw 1.2vw;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--ouro);
+  color: var(--vinho);
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 4vw;
+  color: var(--ouro);
+  margin-bottom: 1vw;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5vw;
+  color: var(--ouro);
+  margin: 2vw 0 1vw 0;
+}
+
+p {
+  font-size: 1.2vw;
+  margin-bottom: 1.5vw;
+}
+
+section, article, main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid var(--ouro);
+  border-radius: 10px;
+  margin: 1.5vw 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2vw;
+  background-color: var(--pergaminho);
+  color: var(--marrom);
+  font-size: 1.1vw;
+}
+
+th {
+  background-color: var(--marrom);
+  color: var(--ouro);
+  padding: 1vw;
+}
+
+td {
+  padding: 1vw;
+  border: 1px solid var(--marrom);
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #e2d3c1;
+}
+
+a {
+  color: var(--ouro);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4vw;
+  padding-top: 2vw;
+  border-top: 2px solid var(--ouro);
+  font-size: 1.1vw;
+}
+
+@media (max-width: 768px) {
+
+  h1 { font-size: 9vw; }
+  h2 { font-size: 6vw; }
+  p { font-size: 4vw; }
+  nav a { font-size: 4vw; }
+
+  table, th, td {
+    font-size: 3.5vw;
+  }
+}
